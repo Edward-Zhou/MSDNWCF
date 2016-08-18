@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        function AjaxRequest() {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:6376/Service1.svc/getdata?value=123",
+                dataType: "json",
+                success: function (msg) {
+                    alert(msg);
+                },
+                error: function (err) {
+                    alert(err);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="AjaxRequest()">AjaxRequest</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3892800e-a01e-4bcd-b91d-76ddecc36d48" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.168.197.122/WCFDelegation/Service1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service13.xsd" MetadataType="Schema" ID="add8aa7d-d2e7-4c4c-ae69-c4e6e9931137" SourceId="1" SourceUrl="http://10.168.197.122/WCFDelegation/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service11.disco" MetadataType="Disco" ID="85b9ce95-71b7-4a7c-89ff-0498c8c7db53" SourceId="1" SourceUrl="http://10.168.197.122/WCFDelegation/Service1.svc?disco" />
+    <MetadataFile FileName="Service11.wsdl" MetadataType="Wsdl" ID="904e9ed6-2d58-4280-a795-f8bd6160d2bf" SourceId="1" SourceUrl="http://10.168.197.122/WCFDelegation/Service1.svc?wsdl" />
+    <MetadataFile FileName="Service131.xsd" MetadataType="Schema" ID="33f01810-32f4-46f1-b8f1-bdbffe81508f" SourceId="1" SourceUrl="http://10.168.197.122/WCFDelegation/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service132.xsd" MetadataType="Schema" ID="b2698f51-90e9-4924-bcdc-beaca9e3efd1" SourceId="1" SourceUrl="http://10.168.197.122/WCFDelegation/Service1.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

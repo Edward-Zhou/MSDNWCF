@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        function UploadFile() {
+            // grab your file object from a file input
+            fileData = document.getElementById("fileUpload").files[0];
+            var data = new FormData();
+            $.ajax({
+                url: 'http://localhost:35508/Service1.svc/FileUploadByte',
+                type: 'POST',
+                data: fileData,
+                cache: false,
+                dataType: 'json',
+                processData: false, // Don't process the files
+                contentType: "application/octet-stream", // Set content type to false as jQuery will tell the server its a query string request
+                success: function (data) {
+                    alert('successful..');
+                },
+                error: function (data) {
+                    alert('Some error Occurred!');
+                }
+            });
+
+        }
+        function sendRequest() {
+            $.ajax({
+                url: 'http://localhost:50201/Service1.svc/getData?value=123',
+                type: 'get',
+                datatype:'json',
+                success: function (data) {
+                    $.ajax({
+                        url: 'http://localhost:50201/Service1.svc/getReturn?value='+data,
+                        type: 'get',
+                        success: function (data) {
+                            alert(data);
+                        },
+
+                    })
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="file" id="fileUpload" value="" />
+        <br />
+        <br />
+        <button id="btnUpload" onclick="UploadFile()">
+            Upload
+        </button>
+    </div>
+    <button id="btnDownload" onclick="DownloadFile()">
+        Download
+    </button>
+    <button id="sendRequest" onclick="sendRequest()">sendRequest</button>
+</body>
+</html>

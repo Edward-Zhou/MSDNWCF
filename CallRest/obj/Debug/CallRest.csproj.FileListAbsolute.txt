@@ -1,0 +1,6 @@
+D:\Edward\Project\MSDNWCF\CallRest\obj\Debug\CallRest.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNWCF\CallRest\bin\Debug\CallRest.exe.config
+D:\Edward\Project\MSDNWCF\CallRest\bin\Debug\CallRest.exe
+D:\Edward\Project\MSDNWCF\CallRest\bin\Debug\CallRest.pdb
+D:\Edward\Project\MSDNWCF\CallRest\obj\Debug\CallRest.exe
+D:\Edward\Project\MSDNWCF\CallRest\obj\Debug\CallRest.pdb
